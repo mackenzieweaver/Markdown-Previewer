@@ -54,7 +54,7 @@ var editor = document.getElementById('editor');
 var preview = document.getElementById('preview');
 
 editor.innerHTML = placeholder;
-preview.innerHTML = marked(editor.innerHTML);
+preview.innerHTML = marked(editor.textContent);
 
 editor.addEventListener("keyup", updater);
 
